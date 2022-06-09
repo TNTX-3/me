@@ -16,15 +16,15 @@ import platform
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
 some_words = ["what", "does", "this", "line", "do", "?"]
-
+# It will loop through these words
 for word in some_words:
     print(word)
-
+# It is the same as above
 for x in some_words:
     print(x)
-
+# It will print the entire list
 print(some_words)
-
+# It will only print the words what, does, this and line
 if len(some_words) > 3:
     print("some_words contains more than 3 words")
 
