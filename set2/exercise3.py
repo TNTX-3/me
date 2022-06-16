@@ -148,7 +148,21 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    block_number = []
+    for j in range(1):
+        block_number.append(loops_1c(number_of_items=10, symbol= "0"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "1"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "2"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "3"))  
+        block_number.append(loops_1c(number_of_items=10, symbol= "4"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "5"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "6"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "7"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "8"))
+        block_number.append(loops_1c(number_of_items=10, symbol= "9"))
+    
+
+    return block_number
 
 
 def loops_4():
@@ -168,7 +182,33 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    block_number_1 = []
+    for h in range (10):
+        block_number_1.append([])
+    for j in range(10):
+        for i in range(10):
+            block_number_1[i].append(str(j))
+    return block_number_1
+    
+
+    #for j in range (10):
+    #    for i in range(10):
+    #        block_number_1[1].append(str(0))
+    #block_number_1 = [['0'], ['0']]
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    #block_number_1.append(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
+    
+
+    return block_number_1
+    
 
 
 def loops_5():
@@ -245,7 +285,23 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+
+    star_list = []
+
+    for j in range(5):
+        empty_list = []
+        for i in range(9):
+            empty_list.append(' ')
+        print(empty_list)
+        star_list.append(empty_list)
+        
+    for j in range(5):
+        beginning = 4 - j
+        end = 5 + j
+        for i in range(beginning, end):
+            star_list[j][i] = '*'
+    return star_list
+    
 
 
 def little_printer(some_kind_of_list, exercise_name):
