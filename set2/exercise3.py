@@ -2,6 +2,9 @@
 """Modify each function until the tests pass."""
 
 
+from tkinter import N, Y
+
+
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
@@ -13,8 +16,20 @@ def is_odd(a_number):
 
     So if a_number modulo two is zero, then it's even.
     """
-    return None
+    
+    if a_number % 2 == 0: 
+        answer = False
+    else:
+        answer = True
+ #   if a_number: 13 % 12 == 1, answer: True
 
+ #   if a_number: 4 % 2 == 0, answer: False
+    
+   
+    return answer
+
+variable_XX = is_odd(54)
+print(variable_XX)
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
@@ -31,8 +46,17 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements.
     As an extra challenge, see if you can get that down to three.
     """
-    return None
 
+    if moves and should_move:
+        return "No Problem"
+
+    elif moves and not should_move:
+        return "Duct Tape"
+
+    elif not moves and should_move:
+        return"WD-40"
+    elif not moves and not should_move:
+        return "No Problem"
 
 def loops_preview():
     """Make 8 poops.
