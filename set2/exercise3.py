@@ -4,6 +4,8 @@
 
 from tkinter import N, Y
 
+from numpy import number
+
 
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
@@ -94,7 +96,11 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    my_list = []
+    for i in range(number_of_items):
+        my_list.append(symbol)
+    return my_list
+
 
 
 def loops_2():
@@ -115,7 +121,10 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square = []
+    for j in range(10):
+            star_square.append(loops_1c(number_of_items=10, symbol="*"))
+    return star_square
 
 
 def loops_3():
