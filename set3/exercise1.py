@@ -48,7 +48,11 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
+message = f"a number between {low} and {high}:"
 
+    while True:
+        m = input(message)
+        print(m)
     
 
     
@@ -71,6 +75,12 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
+
+
+
+
+
+
     return None
 
 

@@ -238,8 +238,15 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
-
+    block_number_1 = []
+    
+        
+    for i in range(10):
+        inner_list = []
+        for j in range(5):
+            inner_list.append(f"(i{i}, j{j})")
+        block_number_1.append(inner_list)
+    return block_number_1
 
 def loops_6():
     """Make a wedge of numbers.
@@ -261,7 +268,16 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    block_number_1 = []
+    
+        
+    for i in range(1,11):
+        inner_list = []
+        for j in range(i):
+            inner_list.append(f"{j}")
+        block_number_1.append(inner_list)
+    return block_number_1
+
 
 
 def loops_7():
