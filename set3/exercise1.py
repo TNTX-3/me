@@ -5,6 +5,9 @@ Modify each function until the tests pass.
 """
 
 
+from pygments import highlight
+
+
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
@@ -35,7 +38,11 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-   
+    new_list = []
+    for i in range(start,stop):
+       
+        new_list.append(i)
+
 
     return range (start, stop, 2)
 
@@ -48,15 +55,13 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-message = f"a number between {low} and {high}:"
-
     while True:
-        m = input(message)
-        print(m)
-    
-
-    
-    return None
+        answer = input(f"Give me a number between {low} - {high}: ")
+        num = int(answer)
+        if low < num < high:
+            return num
+        else:
+            print("thats not in range, try again")
 
 
 def not_number_rejector(message):
@@ -66,7 +71,8 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    return None
+
+   
 
 
 def super_asker(low, high):
