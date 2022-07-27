@@ -39,12 +39,12 @@ def two_step_ranger(start, stop):
     You can either reuse loop_ranger, or the range function that in the standard library
     """
     new_list = []
-    for i in range(start,stop):
+    for i in range(start,stop,2):
        
         new_list.append(i)
 
 
-    return range (start, stop, 2)
+    return new_list
 
 
 def stubborn_asker(low, high):
@@ -71,6 +71,15 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+    while True:
+        try:
+            input_number = int (input())
+            print("{} looks good.".format(input_number))
+            return input_number
+
+        except Exception as e:
+                print("Please give only integers ({})".format(e))
+
 
    
 
@@ -81,7 +90,16 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-
+    while True:
+        user_input = input(f"Give me a number between {low} and {high}")
+        try:
+            num = int(user_input)
+            if low < num < high :
+                return num
+            else:
+                print(f"{num} is not between {low} and {high}")
+        except Exception as e:
+            print(f"{user_input} isn't an integer, enter an integer please.")
 
 
 
