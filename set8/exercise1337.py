@@ -132,7 +132,7 @@ def fizz_buzz() -> List:
         if i % 3 == 0 and i % 5 == 0:
             fizz_buzz_list.append("FizzBuzz")
             
-        elif i% 3 == 0:
+        elif i % 3 == 0:
             fizz_buzz_list.append("Fizz")
             
         elif i % 5 == 0:
@@ -174,9 +174,11 @@ def pet_filter(letter="a") -> List:
         "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"
     ]
     # fmt: on
-    filtered = []
+    
 
-    return filtered
+   
+    return [x for x in pets if letter in x]
+   
 
 
 def best_letter_for_pets() -> str:
@@ -188,6 +190,7 @@ def best_letter_for_pets() -> str:
     TIP: you've seen this before in the pokedex.
     """
     import string
+    
 
     the_alphabet = string.ascii_lowercase
     most_popular_letter = ""
