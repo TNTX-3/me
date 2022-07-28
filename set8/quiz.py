@@ -11,8 +11,8 @@ import time
 
 def string_please() -> str:
     """Returns a string, anything you like."""
-    return None
-
+    print(f"Welcome to the quiz")
+    return str(s)
 
 def list_please() -> list:
     """Returns a list, anything you like."""
