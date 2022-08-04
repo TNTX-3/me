@@ -181,7 +181,7 @@ def pet_filter(letter="a") -> List:
    
     return [x for x in pets if letter in x]
    
-    print(pet_filter(letter="a"))
+
 
 def best_letter_for_pets() -> str:
     """Return the letter that is present at least once in the most pet names.
@@ -198,12 +198,12 @@ def best_letter_for_pets() -> str:
     letter = 0
     length = 0
     for i in range(0,26):
-        length_letter = len(pet_filter(letter = the_alphabet[i]))
+        length_letter = len(pet_filter(letter = the_alphabet[i]))  
         pop_letter = the_alphabet[i]
-        if length_letter < length:
-                
-            most_popular_letter = ""
-    most_popular_letter = ""
+        if length_letter < pop_letter:
+
+            print (most_popular_letter = "")
+
     return most_popular_letter
 
 
